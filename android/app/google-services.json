@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "317914413653",
+    "project_id": "chuck-norris-d1202",
+    "storage_bucket": "chuck-norris-d1202.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317914413653:android:57dd68d5a97177083b32dc",
+        "android_client_info": {
+          "package_name": "com.chucknorris.chucknorris_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "317914413653-312g0dbrkehq5bislt8n0iirtmfbbpv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwRqxoptD5y89msC_4pxcJsCfu0jyE5aI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "317914413653-312g0dbrkehq5bislt8n0iirtmfbbpv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
