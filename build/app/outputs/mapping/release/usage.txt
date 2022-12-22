@@ -7853,8 +7853,8 @@ com.google.common.util.concurrent.ClosingFuture$Combiner2
 kotlin.reflect.TypesJVMKt$WhenMappings
 kotlin.jvm.internal.PropertyReference1
 com.google.cloud.audit.RequestMetadataOrBuilder
-com.google.api.Monitoring
 com.google.api.ConfigChange$Builder
+com.google.api.Monitoring
 kotlinx.coroutines.internal.Concurrent_commonKt
 kotlin.UNumbersKt
 androidx.core.telephony.mbms.MbmsHelper
@@ -11984,8 +11984,8 @@ com.google.common.collect.ConcurrentHashMultiset$1
 com.google.android.gms.common.internal.ICancelToken$Stub
 com.google.firestore.v1.AggregationResultOrBuilder
 kotlinx.coroutines.flow.internal.CombineKt$zipImpl$1$1$2$invokeSuspend$$inlined$collect$1
-com.google.common.hash.BloomFilter
 com.google.common.io.CharSink
+com.google.common.hash.BloomFilter
 com.google.common.collect.ImmutableSetMultimap$Builder
 com.google.api.Service
 com.google.common.collect.Maps$ViewCachingAbstractMap
@@ -23464,14 +23464,14 @@ kotlin.KotlinVersion:
     public static final kotlin.KotlinVersion$Companion Companion
 io.grpc.ClientInterceptors:
     private static final io.grpc.ClientCall NOOP_CALL
-com.google.firebase.firestore.auth.-$$Lambda$FirebaseAuthCredentialsProvider$_HyYAsePXg6hHzhFo991nvKhw8o:
-    public final void onIdTokenChanged(com.google.firebase.internal.InternalTokenResult)
 com.google.firebase.firestore.auth.-$$Lambda$FirebaseAppCheckTokenProvider$E-ygSrfqGrukSR5BHxKqFLeZbmw:
     public final void onAppCheckTokenChanged(com.google.firebase.appcheck.AppCheckTokenResult)
+com.google.firebase.firestore.auth.-$$Lambda$FirebaseAuthCredentialsProvider$_HyYAsePXg6hHzhFo991nvKhw8o:
+    public final void onIdTokenChanged(com.google.firebase.internal.InternalTokenResult)
 com.google.firebase.crashlytics.internal.common.-$$Lambda$Cu0wOoGXbvGzEhedNS4Zq8UJwmQ:
     public final void handleBreadcrumb(java.lang.String)
+io.flutter.view.TextureRegistry$SurfaceTextureEntry$-CC
+io.flutter.plugin.platform.PlatformView$-CC
 io.flutter.plugin.common.BinaryMessenger$-CC:
     public static io.flutter.plugin.common.BinaryMessenger$TaskQueue $default$makeBackgroundTaskQueue(io.flutter.plugin.common.BinaryMessenger,io.flutter.plugin.common.BinaryMessenger$TaskQueueOptions)
     public static void $default$setMessageHandler(io.flutter.plugin.common.BinaryMessenger,java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler,io.flutter.plugin.common.BinaryMessenger$TaskQueue)
-io.flutter.view.TextureRegistry$SurfaceTextureEntry$-CC
-io.flutter.plugin.platform.PlatformView$-CC
