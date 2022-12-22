@@ -1,7 +1,7 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
 export "FLUTTER_ROOT=C:\Users\User\Flutter_Development\sdks\flutter"
-export "FLUTTER_APPLICATION_PATH=C:\Users\User\Downloads\New folder\updated_Assignment_2\Tinder_with_Chuck_app"
+export "FLUTTER_APPLICATION_PATH=C:\Users\User\Downloads\New_folder\updated_Assignment_2\Tinder_with_Chuck_app"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
 export "FLUTTER_TARGET=lib\main.dart"
 export "FLUTTER_BUILD_DIR=build"

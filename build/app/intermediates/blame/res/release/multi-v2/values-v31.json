@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\User\\Downloads\\New folder\\updated_Assignment_2\\Tinder_with_Chuck_app\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v31\\values-v31.xml",
+            "outputFile": "C:\\Users\\User\\Downloads\\New_folder\\updated_Assignment_2\\Tinder_with_Chuck_app\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v31\\values-v31.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\User\\Downloads\\New folder\\updated_Assignment_2\\Tinder_with_Chuck_app\\android\\app\\src\\main\\res\\values-v31\\styles.xml",
+                    "source": "C:\\Users\\User\\Downloads\\New_folder\\updated_Assignment_2\\Tinder_with_Chuck_app\\android\\app\\src\\main\\res\\values-v31\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

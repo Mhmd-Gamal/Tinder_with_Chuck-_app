@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\User\\Downloads\\New folder\\updated_Assignment_2\\Tinder_with_Chuck_app\\build\\connectivity\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-in\\values-in.xml",
+            "outputFile": "C:\\Users\\User\\Downloads\\New_folder\\updated_Assignment_2\\Tinder_with_Chuck_app\\build\\connectivity\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-in\\values-in.xml",
             "map": [
                 {
                     "source": "C:\\Users\\User\\.gradle\\caches\\transforms-2\\files-2.1\\b57bef5739d5237a5aab1f8eac8860ab\\core-1.6.0\\res\\values-in\\values-in.xml",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\User\\Downloads\\New folder\\updated_Assignment_2\\Tinder_with_Chuck_app\\build\\connectivity\\intermediates\\res\\merged\\release\\values-in\\values-in.xml",
+            "outputFile": "C:\\Users\\User\\Downloads\\New_folder\\updated_Assignment_2\\Tinder_with_Chuck_app\\build\\connectivity\\intermediates\\res\\merged\\release\\values-in\\values-in.xml",
             "map": [
                 {
                     "source": "C:\\Users\\User\\.gradle\\caches\\transforms-2\\files-2.1\\b57bef5739d5237a5aab1f8eac8860ab\\core-1.6.0\\res\\values-in\\values-in.xml",

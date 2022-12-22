@@ -12,8 +12,6 @@ class FavoritesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //TODO: Move the builder method to another class?
-
     //Getting the list of favorite Jokes from hive
     List<dynamic> boxContent = box.get('jokes', defaultValue: <Jokes>[]);
     List<Jokes> jokesList = List<Jokes>.from(boxContent);

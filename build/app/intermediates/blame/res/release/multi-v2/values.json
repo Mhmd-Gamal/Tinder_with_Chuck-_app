@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\User\\Downloads\\New folder\\updated_Assignment_2\\Tinder_with_Chuck_app\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\User\\Downloads\\New_folder\\updated_Assignment_2\\Tinder_with_Chuck_app\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\User\\Downloads\\New folder\\updated_Assignment_2\\Tinder_with_Chuck_app\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\User\\Downloads\\New_folder\\updated_Assignment_2\\Tinder_with_Chuck_app\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,16",
                         "startColumns": "4,4",
@@ -20,23 +20,6 @@
                         "endLines": "127,130",
                         "endColumns": "12,12",
                         "endOffsets": "9066,9235"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\User\\Downloads\\New folder\\updated_Assignment_2\\Tinder_with_Chuck_app\\build\\firebase_crashlytics\\intermediates\\packaged_res\\release\\values\\values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "60",
-                        "endOffsets": "111"
-                    },
-                    "to": {
-                        "startLines": "11",
-                        "startColumns": "4",
-                        "startOffsets": "501",
-                        "endColumns": "60",
-                        "endOffsets": "557"
                     }
                 },
                 {
@@ -92,6 +75,23 @@
                         "endLines": "7,8,9,10,81,151,155,336,353,361",
                         "endColumns": "11,59,51,44,59,24,24,24,24,24",
                         "endOffsets": "339,399,451,496,5169,10550,10747,20440,21554,21947"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\User\\Downloads\\New_folder\\updated_Assignment_2\\Tinder_with_Chuck_app\\build\\firebase_crashlytics\\intermediates\\packaged_res\\release\\values\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "60",
+                        "endOffsets": "111"
+                    },
+                    "to": {
+                        "startLines": "11",
+                        "startColumns": "4",
+                        "startOffsets": "501",
+                        "endColumns": "60",
+                        "endOffsets": "557"
                     }
                 },
                 {
