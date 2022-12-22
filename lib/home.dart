@@ -7,7 +7,7 @@ import 'package:url_launcher/url_launcher.dart' as url_launcher;
 import 'dart:convert';
 
 import 'package:dio/dio.dart';
-import 'myFavorites.dart';
+import 'my_favorites.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:hive/hive.dart';
@@ -309,7 +309,7 @@ class HomePageState extends State<HomePage> implements Show {
                       child: ElevatedButton(
                         onPressed: () => viewer.get_joke(curr_cat!, false),
                         style: ElevatedButton.styleFrom(
-                            primary: Colors.red,
+                            backgroundColor: Colors.red,
                             minimumSize: const Size(150.0, 35.0)),
                         child: const Text('Switch'),
                       )),
@@ -318,7 +318,7 @@ class HomePageState extends State<HomePage> implements Show {
                       child: ElevatedButton(
                         onPressed: viewer.showPhotos,
                         style: ElevatedButton.styleFrom(
-                            primary: Colors.red,
+                            backgroundColor: Colors.red,
                             minimumSize: const Size(150.0, 35.0)),
                         child: const Text('Related Images'),
                       )),
@@ -327,7 +327,7 @@ class HomePageState extends State<HomePage> implements Show {
                       child: ElevatedButton(
                         onPressed: viewer.show_in_browser,
                         style: ElevatedButton.styleFrom(
-                            primary: Colors.red,
+                            backgroundColor: Colors.red,
                             minimumSize: const Size(150.0, 35.0)),
                         child: const Text('Show in Browser'),
                       )),
@@ -336,7 +336,7 @@ class HomePageState extends State<HomePage> implements Show {
                       child: ElevatedButton(
                         onPressed: viewer.add_favorites,
                         style: ElevatedButton.styleFrom(
-                            primary: Colors.red,
+                            backgroundColor: Colors.red,
                             minimumSize: const Size(150.0, 35.0)),
                         child: const Text('Add to My Favorites'),
                       ))
