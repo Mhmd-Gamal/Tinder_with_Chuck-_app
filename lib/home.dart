@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors, non_constant_identifier_names
-
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -27,12 +25,12 @@ Future<bool> hasNetwork(BuildContext context) async {
 
 void onNetworkMissed(BuildContext context) {
   ScaffoldMessenger.of(context).showMaterialBanner(MaterialBanner(
-      content: Text(
+      content: const Text(
           'Failed to connect to network. Please connect to the Internet then try again'),
       backgroundColor: Colors.grey,
       actions: [
         TextButton(
-          child: Text('DISMISS'),
+          child: const Text('DISMISS'),
           onPressed: () {
             ScaffoldMessenger.of(context).hideCurrentMaterialBanner();
           },
@@ -43,15 +41,15 @@ void onNetworkMissed(BuildContext context) {
 /// ===========================================================================
 class PrepJoke {
   BuildContext context;
-  late HomePageState Show;
+  late HomePageState show;
   Jokes joke = Jokes();
   Box box;
 
   // Constructor which takes context and the Show
-  PrepJoke(this.context, this.Show, this.box);
+  PrepJoke(this.context, this.show, this.box);
 
   // Get a random joke and fetch the json into a joke object
-  void get_joke(String category, bool initialJoke) async {
+  void getJoke(String category, bool initialJoke) async {
     bool isOnline = await hasNetwork(context);
     String url;
 
@@ -63,18 +61,18 @@ class PrepJoke {
 
     // collect the Joke from the API
 
-    void collect_joke() async {
+    void collectJoke() async {
       try {
         var response = await Dio().get(url);
         joke = Jokes.fromJson(jsonDecode(response.toString()));
-        Show.text_update(joke.value!, joke.url!, joke.iconUrl!);
+        show.textUpdate(joke.value!, joke.url!, joke.iconUrl!);
       } catch (e) {
         //print(e);
       }
     }
 
     if (isOnline) {
-      collect_joke();
+      collectJoke();
     } else {
       onNetworkMissed(context);
     }
@@ -84,40 +82,40 @@ class PrepJoke {
     }
   }
 
-  //void show_in_browser() => Show.goto_url('Show Joke');
-  void show_in_browser() async {
+  //void showInBrowser() => Show.goToUrl('Show Joke');
+  void showInBrowser() async {
     bool isOnline = await hasNetwork(context);
 
     if (isOnline) {
       if (joke.value == null || joke.value == '') {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
+          const SnackBar(
             content: Text('Please Load a joke first by pressing Like button'),
           ),
         );
         return;
       }
 
-      goto_url('Show Joke');
+      goToUrl('Show Joke');
     } else {
       onNetworkMissed(context);
     }
   }
 
-  //void ShowPhotos() => Show.goto_url('Show Photos');
+  //void ShowPhotos() => Show.goToUrl('Show Photos');
   void showPhotos() async {
     bool isOnline = await hasNetwork(context);
     if (isOnline) {
       if (joke.value == null || joke.value == '') {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
+          const SnackBar(
             content: Text('Please Load a joke first by pressing Like button'),
           ),
         );
         return;
       }
 
-      goto_url('Show Photos');
+      goToUrl('Show Photos');
     } else {
       onNetworkMissed(context);
     }
@@ -128,12 +126,12 @@ class PrepJoke {
         MaterialPageRoute(builder: (context) => FavoritesScreen(box: box)));
   }
 
-  void add_favorites() async {
+  void addFavorites() async {
     bool isOnline = await hasNetwork(context);
     if (isOnline) {
       if (joke.value == null || joke.value == '') {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
+          const SnackBar(
             content: Text('Please Load a joke first by pressing Like button'),
           ),
         );
@@ -148,7 +146,7 @@ class PrepJoke {
 
       //favoriteJokes.add(joke);
 
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
         content: Text("Added to favorites"),
       ));
 
@@ -161,7 +159,7 @@ class PrepJoke {
   }
 
   //@override
-  void goto_url(String type) {
+  void goToUrl(String type) {
     //Open related images of the joke on chrome
     if (type == 'Show Photos') {
       String jokeContent = joke.value!.replaceAll(' ', '+');
@@ -179,7 +177,7 @@ class PrepJoke {
 
 //Abstract class to connect with the Show
 abstract class Show {
-  void text_update(String value, String joke_url, String imageUrl);
+  void textUpdate(String value, String jokeUrl, String imageUrl);
 }
 // ===========================================================================
 
@@ -191,16 +189,15 @@ class HomePage extends StatefulWidget {
   const HomePage({Key? key, required this.box}) : super(key: key);
 
   @override
-  // ignore: no_logic_in_create_state
-  HomePageState createState() => HomePageState(box);
+  HomePageState createState() => HomePageState();
 }
 
 class HomePageState extends State<HomePage> implements Show {
-  late String joke_val = '';
-  late String joke_url = '';
-  late String img_url = '';
+  late String jokeVal = '';
+  late String jokeUrl = '';
+  late String imgUrl = '';
   late final Box box;
-  final cat_list = [
+  final catList = [
     "All categories",
     "animal",
     "career",
@@ -221,9 +218,9 @@ class HomePageState extends State<HomePage> implements Show {
   ];
   //HomePageState(Box box);
 
-  String? curr_cat = "All categories";
+  String? currCat = "All categories";
 
-  HomePageState(this.box);
+  //HomePageState(this.box);
   @override
   void initState() {
     bool initialJoke = true;
@@ -234,21 +231,21 @@ class HomePageState extends State<HomePage> implements Show {
     viewer = PrepJoke(context, this, box);
 
     //Getting the first joke from the API
-    viewer.get_joke(cat_list[0], initialJoke);
+    viewer.getJoke(catList[0], initialJoke);
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 141, 63, 46),
+          backgroundColor: const Color.fromARGB(255, 141, 63, 46),
           toolbarHeight: 55,
           title: const Text('Tinder with Chuck Norris'),
         ),
-        drawer: Navigation(),
+        drawer: const Navigation(),
         body: Center(
             child: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             image: DecorationImage(
                 image: NetworkImage(
                     "https://d50-a.sdn.cz/d_50/c_img_E_G/Q18EK/chuck-norris.jpeg"),
@@ -262,18 +259,20 @@ class HomePageState extends State<HomePage> implements Show {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    margin: EdgeInsets.all(15),
+                    margin: const EdgeInsets.all(15),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
                         border: Border.all(color: Colors.black, width: 2)),
-                    padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                     child: DropdownButtonHideUnderline(
                       child: DropdownButton<String>(
                         dropdownColor: Colors.black,
                         iconEnabledColor: Colors.white,
-                        style: TextStyle(color: Colors.white, fontSize: 20),
-                        value: curr_cat,
-                        items: cat_list
+                        style:
+                            const TextStyle(color: Colors.white, fontSize: 20),
+                        value: currCat,
+                        items: catList
                             .map<DropdownMenuItem<String>>((String value) =>
                                 DropdownMenuItem<String>(
                                     value:
@@ -284,20 +283,21 @@ class HomePageState extends State<HomePage> implements Show {
                             .toList(),
                         onChanged: (category) {
                           setState(() {
-                            curr_cat = category!;
+                            currCat = category!;
                           });
-                          viewer.get_joke(category!, false);
+                          viewer.getJoke(category!, false);
                         },
                         isExpanded: true,
                         iconSize: 36,
-                        icon: Icon(Icons.arrow_drop_down, color: Colors.black),
+                        icon: const Icon(Icons.arrow_drop_down,
+                            color: Colors.black),
                       ),
                     ),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(7.8, 7.8, 7.8, 70.0),
                     child: Text(
-                      joke_val,
+                      jokeVal,
                       style: TextStyle(
                         fontSize: 20.0,
                         foreground: Paint()..color = Colors.white,
@@ -305,15 +305,15 @@ class HomePageState extends State<HomePage> implements Show {
                     ),
                   ),
                   Container(
-                      margin: EdgeInsets.all(1),
+                      margin: const EdgeInsets.all(1),
                       child: ElevatedButton(
-                        onPressed: () => viewer.get_joke(curr_cat!, false),
+                        onPressed: () => viewer.getJoke(currCat!, false),
                         style: ElevatedButton.styleFrom(
                             minimumSize: const Size(150.0, 35.0)),
                         child: const Text('Switch'),
                       )),
                   Container(
-                      margin: EdgeInsets.all(1),
+                      margin: const EdgeInsets.all(1),
                       child: ElevatedButton(
                         onPressed: viewer.showPhotos,
                         style: ElevatedButton.styleFrom(
@@ -321,17 +321,17 @@ class HomePageState extends State<HomePage> implements Show {
                         child: const Text('Related Images'),
                       )),
                   Container(
-                      margin: EdgeInsets.all(1),
+                      margin: const EdgeInsets.all(1),
                       child: ElevatedButton(
-                        onPressed: viewer.show_in_browser,
+                        onPressed: viewer.showInBrowser,
                         style: ElevatedButton.styleFrom(
                             minimumSize: const Size(150.0, 35.0)),
                         child: const Text('Show in Browser'),
                       )),
                   Container(
-                      margin: EdgeInsets.all(1),
+                      margin: const EdgeInsets.all(1),
                       child: ElevatedButton(
-                        onPressed: viewer.add_favorites,
+                        onPressed: viewer.addFavorites,
                         style: ElevatedButton.styleFrom(
                             minimumSize: const Size(150.0, 35.0)),
                         child: const Text('Add to My Favorites'),
@@ -345,11 +345,11 @@ class HomePageState extends State<HomePage> implements Show {
 
   // change the text aftr updating the joke
   @override
-  void text_update(String value, url, imageUrl) {
+  void textUpdate(String value, url, imageUrl) {
     setState(() {
-      joke_val = value;
-      joke_url = url;
-      img_url = imageUrl;
+      jokeVal = value;
+      jokeUrl = url;
+      imgUrl = imageUrl;
     });
   }
 }
@@ -364,7 +364,7 @@ class Navigation extends StatelessWidget {
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
-            DrawerHeader(
+            const DrawerHeader(
               child: Text(''),
               decoration: BoxDecoration(
                   image: DecorationImage(
@@ -372,8 +372,8 @@ class Navigation extends StatelessWidget {
                       image: AssetImage('assets/images/app_icon.png'))),
             ),
             ListTile(
-              leading: Icon(Icons.wysiwyg_rounded),
-              title: Text('My Favorite Jokes'),
+              leading: const Icon(Icons.wysiwyg_rounded),
+              title: const Text('My Favorite Jokes'),
               onTap: () => {viewer.directToFavourites()},
             ),
           ],

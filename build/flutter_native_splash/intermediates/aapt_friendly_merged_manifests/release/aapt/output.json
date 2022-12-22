@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "applicationId": "net.jonhanson.flutter_native_splash",
+  "variantType": "LIBRARY",
+  "elements": [
+    {
+      "outputType": {
+        "type": "AAPT_FRIENDLY_MERGED_MANIFESTS"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": -1,
+        "outputFile": "flutter_native_splash-release.aar",
+        "fullName": "release",
+        "baseName": "release",
+        "dirName": ""
+      },
+      "path": "AndroidManifest.xml",
+      "properties": {
+        "packageId": "net.jonhanson.flutter_native_splash",
+        "split": ""
+      }
+    }
+  ]
+}
