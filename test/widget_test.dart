@@ -14,7 +14,7 @@ import 'package:tinder_with_chuck_norris/main.dart';
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(ChuckNorris());
+    await tester.pumpWidget(const ChuckNorris());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
