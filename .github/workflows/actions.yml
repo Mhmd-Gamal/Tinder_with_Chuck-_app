@@ -1,0 +1,63 @@
+name: Github Actions
+
+#############################
+# Start the job on all push #
+#############################
+on:
+  push:
+  # branches-ignore: [master, main]
+  # Remove the line above to run when pushing to master
+  pull_request:
+    branches: [master, main]
+
+###############
+# Set the Job #
+###############
+jobs:
+  build:
+    # Name the Job
+    name: Flutter format and build
+    # Set the agent to run on
+    runs-on: ubuntu-latest
+
+    ##################
+    # Load all steps #
+    ##################
+    steps:
+      ##########################
+      # Checkout the code base #
+      ##########################
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          # Full git history is needed to get a proper list of changed files within `super-linter`
+          fetch-depth: 0
+
+      # Setup the flutter environment.
+      - uses: subosito/flutter-action@v1
+        with:
+          channel: 'beta' # 'dev', 'alpha', default to: 'stable'
+          # flutter-version: '1.12.x' # you can also specify exact version of flutter
+
+      # Get flutter dependencies.
+      - run: flutter pub get
+
+      # Check for any formatting issues in the code.
+      - run: flutter format
+      - name: Linter
+
+        run: flutter analyze .
+
+      - name: Build apk
+
+        run: flutter build apk
+
+
+      - name: Upload apk artifact
+
+        uses: actions/upload-artifact@v3
+
+        with:
+
+          name: release-apk
+          path: 'build/app/outputs/apk/release/app-release.apk'
