@@ -1,0 +1,190 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.chucknorris.chucknorris_app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\User\Downloads\New_folder\updated_Assignment_2\Tinder_with_Chuck_app\android\app\src\debug\AndroidManifest.xml:7:5-66
+15-->C:\Users\User\Downloads\New_folder\updated_Assignment_2\Tinder_with_Chuck_app\android\app\src\debug\AndroidManifest.xml:7:22-64
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[:connectivity] C:\Users\User\Downloads\New_folder\updated_Assignment_2\Tinder_with_Chuck_app\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
+16-->[:connectivity] C:\Users\User\Downloads\New_folder\updated_Assignment_2\Tinder_with_Chuck_app\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-76
+17
+18    <application
+19        android:name="android.app.Application"
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.6.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b57bef5739d5237a5aab1f8eac8860ab\core-1.6.0\AndroidManifest.xml:24:18-86
+21        android:debuggable="true"
+22        android:icon="@mipmap/ic_launcher"
+23        android:label="Chucknorris" >
+24        <activity
+25            android:name="com.chucknorris.chucknorris_app.MainActivity"
+26            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+27            android:exported="true"
+28            android:hardwareAccelerated="true"
+29            android:launchMode="singleTop"
+30            android:theme="@style/LaunchTheme"
+31            android:windowSoftInputMode="adjustResize" >
+32
+33            <!--
+34                 Specifies an Android theme to apply to this Activity as soon as
+35                 the Android process has started. This theme is visible to the user
+36                 while the Flutter UI initializes. After that, this theme continues
+37                 to determine the Window background behind the Flutter UI.
+38            -->
+39            <meta-data
+40                android:name="io.flutter.embedding.android.NormalTheme"
+41                android:resource="@style/NormalTheme" />
+42
+43            <intent-filter>
+44                <action android:name="android.intent.action.MAIN" />
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+47            </intent-filter>
+48        </activity>
+49        <!--
+50             Don't delete the meta-data below.
+51             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+52        -->
+53        <meta-data
+54            android:name="flutterEmbedding"
+55            android:value="2" />
+56
+57        <service
+57-->[:firebase_crashlytics] C:\Users\User\Downloads\New_folder\updated_Assignment_2\Tinder_with_Chuck_app\build\firebase_crashlytics\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+58            android:name="com.google.firebase.components.ComponentDiscoveryService"
+58-->[:firebase_crashlytics] C:\Users\User\Downloads\New_folder\updated_Assignment_2\Tinder_with_Chuck_app\build\firebase_crashlytics\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+59            android:directBootAware="true"
+59-->[com.google.firebase:firebase-common:20.2.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\7c0edd4c8011ffcec3d61e0500ea2989\jetified-firebase-common-20.2.0\AndroidManifest.xml:34:13-43
+60            android:exported="false" >
+60-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ce47a1274c58befc091000c43c4d2530\jetified-firebase-firestore-24.4.0\AndroidManifest.xml:18:13-37
+61            <meta-data
+61-->[:firebase_crashlytics] C:\Users\User\Downloads\New_folder\updated_Assignment_2\Tinder_with_Chuck_app\build\firebase_crashlytics\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+62                android:name="com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar"
+62-->[:firebase_crashlytics] C:\Users\User\Downloads\New_folder\updated_Assignment_2\Tinder_with_Chuck_app\build\firebase_crashlytics\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-130
+63                android:value="com.google.firebase.components.ComponentRegistrar" />
+63-->[:firebase_crashlytics] C:\Users\User\Downloads\New_folder\updated_Assignment_2\Tinder_with_Chuck_app\build\firebase_crashlytics\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+64            <meta-data
+64-->[:cloud_firestore] C:\Users\User\Downloads\New_folder\updated_Assignment_2\Tinder_with_Chuck_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+65                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+65-->[:cloud_firestore] C:\Users\User\Downloads\New_folder\updated_Assignment_2\Tinder_with_Chuck_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-134
+66                android:value="com.google.firebase.components.ComponentRegistrar" />
+66-->[:cloud_firestore] C:\Users\User\Downloads\New_folder\updated_Assignment_2\Tinder_with_Chuck_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+67            <meta-data
+67-->[:firebase_core] C:\Users\User\Downloads\New_folder\updated_Assignment_2\Tinder_with_Chuck_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+68                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+68-->[:firebase_core] C:\Users\User\Downloads\New_folder\updated_Assignment_2\Tinder_with_Chuck_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+69                android:value="com.google.firebase.components.ComponentRegistrar" />
+69-->[:firebase_core] C:\Users\User\Downloads\New_folder\updated_Assignment_2\Tinder_with_Chuck_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+70            <meta-data
+70-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ce47a1274c58befc091000c43c4d2530\jetified-firebase-firestore-24.4.0\AndroidManifest.xml:19:13-21:85
+71                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+71-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ce47a1274c58befc091000c43c4d2530\jetified-firebase-firestore-24.4.0\AndroidManifest.xml:20:17-111
+72                android:value="com.google.firebase.components.ComponentRegistrar" />
+72-->[com.google.firebase:firebase-firestore:24.4.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ce47a1274c58befc091000c43c4d2530\jetified-firebase-firestore-24.4.0\AndroidManifest.xml:21:17-82
+73            <meta-data
+73-->[com.google.firebase:firebase-crashlytics:18.3.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\efce59348908d58ae5c124e0aa5928d4\jetified-firebase-crashlytics-18.3.2\AndroidManifest.xml:17:13-19:85
+74                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+74-->[com.google.firebase:firebase-crashlytics:18.3.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\efce59348908d58ae5c124e0aa5928d4\jetified-firebase-crashlytics-18.3.2\AndroidManifest.xml:18:17-115
+75                android:value="com.google.firebase.components.ComponentRegistrar" />
+75-->[com.google.firebase:firebase-crashlytics:18.3.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\efce59348908d58ae5c124e0aa5928d4\jetified-firebase-crashlytics-18.3.2\AndroidManifest.xml:19:17-82
+76            <meta-data
+76-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\37ba6e8973c712e0a7573aee1b9596e2\jetified-firebase-installations-17.1.0\AndroidManifest.xml:17:13-19:85
+77                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+77-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\37ba6e8973c712e0a7573aee1b9596e2\jetified-firebase-installations-17.1.0\AndroidManifest.xml:18:17-127
+78                android:value="com.google.firebase.components.ComponentRegistrar" />
+78-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\37ba6e8973c712e0a7573aee1b9596e2\jetified-firebase-installations-17.1.0\AndroidManifest.xml:19:17-82
+79        </service>
+80
+81        <activity
+81-->[:url_launcher_android] C:\Users\User\Downloads\New_folder\updated_Assignment_2\Tinder_with_Chuck_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+82            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+82-->[:url_launcher_android] C:\Users\User\Downloads\New_folder\updated_Assignment_2\Tinder_with_Chuck_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+83            android:exported="false"
+83-->[:url_launcher_android] C:\Users\User\Downloads\New_folder\updated_Assignment_2\Tinder_with_Chuck_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+84            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+84-->[:url_launcher_android] C:\Users\User\Downloads\New_folder\updated_Assignment_2\Tinder_with_Chuck_app\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+85
+86        <uses-library
+86-->[androidx.window:window:1.0.0-beta04] C:\Users\User\.gradle\caches\transforms-2\files-2.1\10cc8abd5ea3bc49af1c15c1fab51fb0\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+87            android:name="androidx.window.extensions"
+87-->[androidx.window:window:1.0.0-beta04] C:\Users\User\.gradle\caches\transforms-2\files-2.1\10cc8abd5ea3bc49af1c15c1fab51fb0\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+88            android:required="false" />
+88-->[androidx.window:window:1.0.0-beta04] C:\Users\User\.gradle\caches\transforms-2\files-2.1\10cc8abd5ea3bc49af1c15c1fab51fb0\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+89        <uses-library
+89-->[androidx.window:window:1.0.0-beta04] C:\Users\User\.gradle\caches\transforms-2\files-2.1\10cc8abd5ea3bc49af1c15c1fab51fb0\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+90            android:name="androidx.window.sidecar"
+90-->[androidx.window:window:1.0.0-beta04] C:\Users\User\.gradle\caches\transforms-2\files-2.1\10cc8abd5ea3bc49af1c15c1fab51fb0\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+91            android:required="false" />
+91-->[androidx.window:window:1.0.0-beta04] C:\Users\User\.gradle\caches\transforms-2\files-2.1\10cc8abd5ea3bc49af1c15c1fab51fb0\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+92
+93        <provider
+93-->[com.google.firebase:firebase-common:20.2.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\7c0edd4c8011ffcec3d61e0500ea2989\jetified-firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
+94            android:name="com.google.firebase.provider.FirebaseInitProvider"
+94-->[com.google.firebase:firebase-common:20.2.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\7c0edd4c8011ffcec3d61e0500ea2989\jetified-firebase-common-20.2.0\AndroidManifest.xml:26:13-77
+95            android:authorities="com.chucknorris.chucknorris_app.firebaseinitprovider"
+95-->[com.google.firebase:firebase-common:20.2.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\7c0edd4c8011ffcec3d61e0500ea2989\jetified-firebase-common-20.2.0\AndroidManifest.xml:27:13-72
+96            android:directBootAware="true"
+96-->[com.google.firebase:firebase-common:20.2.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\7c0edd4c8011ffcec3d61e0500ea2989\jetified-firebase-common-20.2.0\AndroidManifest.xml:28:13-43
+97            android:exported="false"
+97-->[com.google.firebase:firebase-common:20.2.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\7c0edd4c8011ffcec3d61e0500ea2989\jetified-firebase-common-20.2.0\AndroidManifest.xml:29:13-37
+98            android:initOrder="100" />
+98-->[com.google.firebase:firebase-common:20.2.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\7c0edd4c8011ffcec3d61e0500ea2989\jetified-firebase-common-20.2.0\AndroidManifest.xml:30:13-36
+99
+100        <activity
+100-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\34ad754ffd7c6f7a887eb6dab950fa90\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+101            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+101-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\34ad754ffd7c6f7a887eb6dab950fa90\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+102            android:exported="false"
+102-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\34ad754ffd7c6f7a887eb6dab950fa90\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+103            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+103-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\34ad754ffd7c6f7a887eb6dab950fa90\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+104
+105        <meta-data
+105-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\78d7cb1b458204bea6c16ceb74ff5f53\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+106            android:name="com.google.android.gms.version"
+106-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\78d7cb1b458204bea6c16ceb74ff5f53\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+107            android:value="@integer/google_play_services_version" />
+107-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\78d7cb1b458204bea6c16ceb74ff5f53\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+108
+109        <service
+109-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c88019681e6c8f5f5debc40866ef2791\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+110            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+110-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c88019681e6c8f5f5debc40866ef2791\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+111            android:exported="false" >
+111-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c88019681e6c8f5f5debc40866ef2791\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+112            <meta-data
+112-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c88019681e6c8f5f5debc40866ef2791\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+113                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+113-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c88019681e6c8f5f5debc40866ef2791\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+114                android:value="cct" />
+114-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c88019681e6c8f5f5debc40866ef2791\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+115        </service>
+116        <service
+116-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\User\.gradle\caches\transforms-2\files-2.1\36f0b8be2937ac829d6251799c33e629\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+117            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+117-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\User\.gradle\caches\transforms-2\files-2.1\36f0b8be2937ac829d6251799c33e629\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+118            android:exported="false"
+118-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\User\.gradle\caches\transforms-2\files-2.1\36f0b8be2937ac829d6251799c33e629\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+119            android:permission="android.permission.BIND_JOB_SERVICE" >
+119-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\User\.gradle\caches\transforms-2\files-2.1\36f0b8be2937ac829d6251799c33e629\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+120        </service>
+121
+122        <receiver
+122-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\User\.gradle\caches\transforms-2\files-2.1\36f0b8be2937ac829d6251799c33e629\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+123            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+123-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\User\.gradle\caches\transforms-2\files-2.1\36f0b8be2937ac829d6251799c33e629\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+124            android:exported="false" />
+124-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\User\.gradle\caches\transforms-2\files-2.1\36f0b8be2937ac829d6251799c33e629\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+125    </application>
+126
+127</manifest>

@@ -33,11 +33,7 @@ void main() async {
 }
 
 class ChuckNorris extends StatefulWidget {
-  //ChuckNorris({super.key});
-  //final Box box;
-
   const ChuckNorris({Key key}) : super(key: key);
-  //const ChuckNorris({super.key});
 
   @override
   ChuckNorrisState createState() => ChuckNorrisState();

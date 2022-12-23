@@ -196,7 +196,6 @@ class HomePageState extends State<HomePage> implements Show {
   late String jokeVal = '';
   late String jokeUrl = '';
   late String imgUrl = '';
-  late final Box box;
   final catList = [
     "All categories",
     "animal",
@@ -228,7 +227,7 @@ class HomePageState extends State<HomePage> implements Show {
     super.initState();
 
     // Initializing an instance of the constructor
-    viewer = PrepJoke(context, this, box);
+    viewer = PrepJoke(context, this, widget.box);
 
     //Getting the first joke from the API
     viewer.getJoke(catList[0], initialJoke);
