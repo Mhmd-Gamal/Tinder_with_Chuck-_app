@@ -9568,8 +9568,8 @@ io.flutter.plugin.editing.TextInputPlugin:
     private static final java.lang.String TAG
 com.google.common.cache.LocalCache$StrongAccessWriteEntry
 androidx.core.graphics.TypefaceCompatBaseImpl$StyleExtractor
-kotlinx.coroutines.flow.SharingConfig
 androidx.core.database.DatabaseUtilsCompat
+kotlinx.coroutines.flow.SharingConfig
 com.google.common.util.concurrent.SettableFuture:
     public static com.google.common.util.concurrent.SettableFuture create()
     private void <init>()
@@ -23466,12 +23466,12 @@ io.grpc.ClientInterceptors:
     private static final io.grpc.ClientCall NOOP_CALL
 com.google.firebase.firestore.auth.-$$Lambda$FirebaseAppCheckTokenProvider$E-ygSrfqGrukSR5BHxKqFLeZbmw:
     public final void onAppCheckTokenChanged(com.google.firebase.appcheck.AppCheckTokenResult)
-com.google.firebase.crashlytics.internal.common.-$$Lambda$Cu0wOoGXbvGzEhedNS4Zq8UJwmQ:
-    public final void handleBreadcrumb(java.lang.String)
 com.google.firebase.firestore.auth.-$$Lambda$FirebaseAuthCredentialsProvider$_HyYAsePXg6hHzhFo991nvKhw8o:
     public final void onIdTokenChanged(com.google.firebase.internal.InternalTokenResult)
-io.flutter.view.TextureRegistry$SurfaceTextureEntry$-CC
+com.google.firebase.crashlytics.internal.common.-$$Lambda$Cu0wOoGXbvGzEhedNS4Zq8UJwmQ:
+    public final void handleBreadcrumb(java.lang.String)
 io.flutter.plugin.common.BinaryMessenger$-CC:
     public static io.flutter.plugin.common.BinaryMessenger$TaskQueue $default$makeBackgroundTaskQueue(io.flutter.plugin.common.BinaryMessenger,io.flutter.plugin.common.BinaryMessenger$TaskQueueOptions)
     public static void $default$setMessageHandler(io.flutter.plugin.common.BinaryMessenger,java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler,io.flutter.plugin.common.BinaryMessenger$TaskQueue)
 io.flutter.plugin.platform.PlatformView$-CC
+io.flutter.view.TextureRegistry$SurfaceTextureEntry$-CC

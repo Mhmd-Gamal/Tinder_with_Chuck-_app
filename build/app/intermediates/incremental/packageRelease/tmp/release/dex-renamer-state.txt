@@ -1,4 +1,4 @@
-#Thu Dec 22 22:14:56 MSK 2022
+#Fri Dec 23 13:01:07 MSK 2022
 base.0=C\:\\Users\\User\\Downloads\\New_folder\\updated_Assignment_2\\Tinder_with_Chuck_app\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
